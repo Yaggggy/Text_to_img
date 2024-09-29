@@ -45,22 +45,22 @@ button.addEventListener('click', async function () {
         
         let downloadBtn = document.getElementById("downloadBtn");
 
-        // Check if the download button already exists
+        
         if (!downloadBtn) {
             downloadBtn = document.createElement("button");
             downloadBtn.id = "downloadBtn";
             downloadBtn.innerText = "Download Image";
-            document.body.appendChild(downloadBtn); // Append the download button to the page
+            document.body.appendChild(downloadBtn); 
         }
 
-        // Set the download functionality
+        
         downloadBtn.addEventListener("click", () => {
-            const a = document.createElement("a"); // Create a temporary link element
-            a.href = image.src; // Set the href to the generated image source
-            a.download = "generated_image.png"; // Set the file name for the downloaded image
+            const a = document.createElement("a"); 
+            a.href = image.src; 
+            a.download = "generated_image.png"; 
             document.body.appendChild(a); 
             a.click(); // Trigger the download
-            document.body.removeChild(a); // Remove the link element after download
+            document.body.removeChild(a); 
         });
     } catch (error) {
         console.error("Error:", error);
