@@ -59,7 +59,7 @@ button.addEventListener('click', async function () {
             a.href = image.src; 
             a.download = "generated_image.png"; 
             document.body.appendChild(a); 
-            a.click(); // Trigger the download
+            a.click(); 
             document.body.removeChild(a); 
         });
     } catch (error) {
