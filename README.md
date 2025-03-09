@@ -17,7 +17,8 @@ HTML, CSS, JavaScript
    cd Text_to_img
    ```
 3. Run the application:
-   ```run the index.html file 
+   ```
+   run index.html 
    ```
 ## ScreenShots :
 ![Screenshot 2025-03-09 121936](https://github.com/user-attachments/assets/47e1ae30-1eb1-4c5e-841b-b136295887c9)
