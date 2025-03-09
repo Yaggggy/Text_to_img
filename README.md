@@ -20,8 +20,10 @@ HTML, CSS, JavaScript
    ```run the index.html file 
    ```
 ## ScreenShots :
+![Screenshot 2025-03-09 121936](https://github.com/user-attachments/assets/47e1ae30-1eb1-4c5e-841b-b136295887c9)
 
 
+![Screenshot 2025-03-09 122307](https://github.com/user-attachments/assets/977e73fe-ef5f-46fe-bccf-d8cab73c934a)
 
 
 ## Usage
