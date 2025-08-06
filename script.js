@@ -11,9 +11,8 @@ async function query() {
     const response = await fetch(
         "https://router.huggingface.co/fal-ai/fal-ai/qwen-image",
 		{
-			headers: {
-				Authorization: `Bearer ${process.env.HF_TOKEN}`,
-				"Content-Type": "application/json",
+			 headers: {
+                Authorization: `Bearer ${token}`, 
 			},
 			method: "POST",
 			body: JSON.stringify({
@@ -68,5 +67,6 @@ button.addEventListener('click', async function () {
         alert("Error generating image: " + error.message);
     }
 });
+
 
 
