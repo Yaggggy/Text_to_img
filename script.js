@@ -9,13 +9,14 @@ async function query() {
 
    
     const response = await fetch(
-        "https://api-inference.huggingface.co/models/ZB-Tech/Text-to-Image",
-        {
-            headers: {
-                Authorization: `Bearer ${token}`, 
-            },
-            method: "POST",
-            body: JSON.stringify({
+        "https://router.huggingface.co/fal-ai/fal-ai/qwen-image",
+		{
+			headers: {
+				Authorization: `Bearer ${process.env.HF_TOKEN}`,
+				"Content-Type": "application/json",
+			},
+			method: "POST",
+			body: JSON.stringify({
                 inputs: inputTxt.value
             }),
         }
@@ -67,3 +68,4 @@ button.addEventListener('click', async function () {
         alert("Error generating image: " + error.message);
     }
 });
+
