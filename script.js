@@ -1,4 +1,4 @@
-const token = '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'; 
+const token = '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'; 
 const inputTxt = document.getElementById("input");
 const image = document.getElementById("image");
 const button = document.getElementById("btn");
@@ -68,4 +68,5 @@ button.addEventListener('click', async function () {
         alert("Error generating image: " + error.message);
     }
 });
+
 
